@@ -8,12 +8,18 @@ $(document).ready(function(){
            800
         )
     });
-})
+});
 
-
-
-$(window).scroll(function(){
-    let nav = $("html").scrollTop();
-    nav > 200 ? $("nav").css("background-color", "#0dcaf0") : $("nav").css("background-color", "transparent");
-    });
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          $(".navbar").css("background" , "transparent");
+        }
+  
+        else{
+            $(".navbar").css("background" , "black");  	
+        }
+    })
+  })
 

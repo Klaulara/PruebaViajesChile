@@ -1,11 +1,13 @@
 html {
     scroll-behavior: auto !important;
 }
-
+* {
+    max-width: 100%;
+}
 body {
     font-family: 'Raleway', sans-serif;
     background-color: black;
-    max-width: 100%;
+    max-width: auto;
     padding: 0;
     margin: 0;
 }
@@ -28,7 +30,4 @@ body {
 }
 .fa-2xl {
     color: white;
-}
-.carousel {
-    max-width: 100%;
 }
