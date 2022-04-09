@@ -12,3 +12,16 @@ body {
 .fa-lg {
     color: white;
 }
+.tarjeta {
+    width: 254px;
+    height: 169.35px;
+}
+.fondo1 {
+    background-color: #07caf0;
+}
+.color {
+    color: #07caf0;
+}
+.fa-2xl {
+    color: white;
+}
