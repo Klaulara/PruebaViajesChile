@@ -31,3 +31,9 @@ body {
 .fa-2xl {
     color: white;
 }
+.bgtrans {
+    background-color: transparent;
+}
+.bgcolor.scrolled{
+    background-color: black;
+}

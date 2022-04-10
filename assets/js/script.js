@@ -1,3 +1,7 @@
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 $(document).ready(function(){
     $("a").click(function(){
         var gato = this.hash
@@ -13,13 +17,12 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 300) {
-          $(".navbar").css("background" , "transparent");
+        if(scroll>550){
+            $("nav").css("background-color", "black");
         }
-  
-        else{
-            $(".navbar").css("background" , "black");  	
+        else {
+            $("nav").css("background-color", "transparent");
         }
-    })
-  })
+    });
+  });
 
